@@ -1,0 +1,167 @@
+/* CSS for top ribbon */
+.top-ribbon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+/* CSS for logo */
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  font-size: 24px;
+}
+
+/* CSS for location */
+.location {
+  display: flex;
+  align-items: center;
+}
+
+.location-icon {
+  color: #fff;
+  margin-right: 5px;
+  font-size: 1.2em;
+  padding-left: 30px;
+}
+
+.city-pincode {
+  margin-left: 5px;
+}
+
+/* CSS for studio name */
+.studio-name {
+  font-size: 24px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+/* CSS for user menu */
+.user-info {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+
+}
+
+.signup-menu {
+  position: relative;
+  margin-right: 20px;
+  font-size: large;
+  display: inline-block;
+}
+
+.signup-dropdown {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.signup-menu:hover .signup-dropdown {
+  display: block;
+  white-space: nowrap;
+}
+
+.signup-dropdown a {
+  color: #333;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.signup-dropdown a:hover {
+  background-color: #f0f0f0;
+}
+
+.fa-shopping-cart {
+  font-size: 24px;
+  margin-right: 10px;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Registration Form Styles */
+.registration-form {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+}
+
+.registration-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.registration-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration-form label,
+.registration-form input,
+.registration-form textarea {
+  margin-bottom: 10px;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form textarea {
+  width: calc(100% - 20px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.registration-form input[type="file"] {
+  margin-top: 5px;
+}
+
+.registration-form button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+  background-color: #007bff;
+  color: #fff;
+}
+
+.registration-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Adjust this section according to your need for displaying uploaded photos */
+.uploaded-photos {
+  margin-top: 15px;
+}
+
+/* Your existing CSS styles */
+/* Add or modify styles for the submit button */
+.small-button {
+  padding: 8px 16px; /* Adjust padding for desired size */
+  font-size: 14px; /* Adjust font size as needed */
+  display: block;
+  margin: 0 auto; /* Centers the button */
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Onboarding</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top ribbon -->
+    <div class="top-ribbon">
+        <div class="logo">
+            <i class="fas fa-camera"></i> <!-- Camera icon -->
+        </div>
+        <div class="location">
+            <!-- Location icon using Font Awesome -->
+            <i class="fas fa-map-pin location-icon"></i>
+            <!-- City and Pincode -->
+            <span class="city-pincode">City, Pincode</span>
+        </div>
+        <div class="studio-name">Studio Aggregator</div>
+        <div class="user-info">
+            <div class="user-menu">
+                <div class="signup-menu">
+                    <span>Signup</span>
+                    <div class="signup-dropdown">
+                        <a href="/signup-studio">As a Studio</a>
+                        <a href="/signup-customer">As a Customer</a>
+                    </div>
+                </div>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </div>  
+    </div>
+
+    <!-- Customer Registration Form -->
+    <div class="registration-form">
+        <h2>Customer Registration</h2>
+        <form action="/submit-registration" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="pincode">Pincode:</label>
+            <input type="text" id="pincode" name="pincode" required>
+
+            <label for="phone">Phone Number:</label>
+            <div class="flex-container">
+                <input type="text" id="phone" name="phone" required>
+                <button class="verify-button">Verify OTP</button>
+            </div>
+
+            <label for="email">Email Id:</label>
+            <div class="flex-container">
+                <input type="text" id="email" name="email" required>
+                <button class="verify-button">Verify OTP</button>
+            </div>
+
+            <button type="submit" class="small-button">SUBMIT</button>
+        </form>
+    </div>
+
+    <!-- Your other content or scripts here -->
+
+    <!-- JavaScript for functionalities like sending OTP, etc. -->
+    <script src="your-script.js"></script>
+</body>
+</html>
